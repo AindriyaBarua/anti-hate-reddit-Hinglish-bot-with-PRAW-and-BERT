@@ -33,4 +33,4 @@ result, model_outputs, wrong_predictions = model.eval_model(eval_df)
 
 print(result, model_outputs, wrong_predictions)
 
-pickle.dump(model, open("distill_model" + '.pkl', 'wb'))
+pickle.dump(model, open("model" + '.pkl', 'wb'))
