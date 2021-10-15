@@ -8,6 +8,8 @@ from simpletransformers
 
 import constants
 
+hate_comments_count = {}
+
 
 def get_reddit_instance():
     # creating an authorized reddit instance
@@ -31,9 +33,8 @@ def load_hate_detection_model():
     return model
 
 
-def handle_hate(comment):
+def handle_hate(subreddit, comment):
     author = comment.author
-    hate_comments_count = {}
     if author not in hate_comments_count:
         hate_comments_count[author] = 1
     else:
@@ -51,7 +52,7 @@ def detect_hate(subreddit, model):
         if constants.WARNING != comment.body: # skip comments by bot
           prediction, _ = model.predict([comment.body])
           if prediction == 1:
-              handle_hate(comment)
+              handle_hate(subreddit, comment)
 
 
 if __name__ == '__main__':
@@ -59,5 +60,3 @@ if __name__ == '__main__':
     subreddit = get_subreddit(reddit)
     model = load_hate_detection_model()
     detect_hate(subreddit, model)
-
-
