@@ -3,10 +3,10 @@ import pickle
 import simpletransformers
 
 # initialize with appropriate values
-client_id = "iwYTnsThxTEbXYDei3iXsg"
-client_secret = "BMDSAPCsJDJnD8Cu1RzYovke1D5ngA"
-username = "huemewpew"
-password = "Morbona2@loveart"
+client_id = ""
+client_secret = ""
+username = ""
+password = ""
 user_agent = "AntiHateIndia by u/huemewpew"
 
 # creating an authorized reddit instance
