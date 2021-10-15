@@ -1,4 +1,4 @@
-# anti-hate-reddit-bot
+# anti-hate-reddit-bot-with-PRAW-and-BERT
 
 This is a reddit bot that detects hate speech in hindi-english code mixed comments in a subreddit, and warns the user posting hate speech.
 
