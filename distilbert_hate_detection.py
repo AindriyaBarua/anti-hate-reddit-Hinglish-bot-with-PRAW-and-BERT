@@ -1,3 +1,8 @@
+"""
+Developed by Aindriya Barua in October, 2021
+"""
+
+
 from simpletransformers.classification import ClassificationModel, ClassificationArgs
 import pandas as pd
 import logging
