@@ -3,8 +3,8 @@ import pickle
 import simpletransformers
 
 # initialize with appropriate values
-client_id = "iwYTnsThxTEbXYDei3iXsg"
-client_secret = "BMDSAPCsJDJnD8Cu1RzYovke1D5ngA"
+client_id = ""
+client_secret = ""
 username = ""
 password = ""
 user_agent = "AntiHateIndia by u/huemewpew"
