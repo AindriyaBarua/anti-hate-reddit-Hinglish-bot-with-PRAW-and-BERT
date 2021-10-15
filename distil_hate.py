@@ -3,6 +3,8 @@ import pandas as pd
 import logging
 from sklearn.model_selection import train_test_split
 
+import pickle
+
 logging.basicConfig(level=logging.INFO)
 transformers_logger = logging.getLogger("transformers")
 transformers_logger.setLevel(logging.WARNING)
@@ -31,5 +33,4 @@ result, model_outputs, wrong_predictions = model.eval_model(eval_df)
 
 print(result, model_outputs, wrong_predictions)
 
-import pickle
 pickle.dump(model, open("distill_model" + '.pkl', 'wb'))
