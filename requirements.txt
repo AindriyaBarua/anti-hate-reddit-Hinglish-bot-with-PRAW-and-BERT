@@ -1,0 +1,4 @@
+praw
+simpletransformers
+torch
+keras
