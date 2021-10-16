@@ -14,3 +14,4 @@ HATE_DETECTION_MODEL = 'model.pkl'
 
 WARNING =  "AntiHateIndia Bot says: WARNING! You have been detected using hate speech! You shall be banned with no further explanation after three such detections. Please be respectful!"
 BAN_REASON = "Threatening, harassing, or inciting violence"
+BAN_MESSAGE = "Banned for using hate speech after three warnings"
