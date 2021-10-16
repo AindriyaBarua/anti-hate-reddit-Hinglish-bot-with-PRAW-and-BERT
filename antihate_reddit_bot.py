@@ -42,7 +42,7 @@ def handle_hate(subreddit, comment):
     if hate_comments_count[author] <= 3:
         comment.reply(constants.WARNING)
     else:
-        subreddit.banned.add(author, ban_reason=constants.BAN_REASON)
+        subreddit.banned.add(author, ban_reason=constants.BAN_REASON, ban_message=constants.BAN_MESSAGE)
         del hate_comments_count[author]
 
 
