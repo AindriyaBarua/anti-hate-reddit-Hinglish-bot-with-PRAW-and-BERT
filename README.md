@@ -1,5 +1,5 @@
 # anti-hate-reddit-bot-with-PRAW-and-BERT
-# This was the POC work for a much improved version which has been built now under the name Project Shor and has won an International Hackathon by United Nations Populations Fund.
+### This was the POC work for a much improved version which has been built now under the name Project Shor and has won an International Hackathon by United Nations Populations Fund.
 
 This is a reddit bot that detects hate speech in hindi-english code mixed comments in a subreddit, and warns the user posting hate speech upto three times and then permanently bans the user with a message.
 
